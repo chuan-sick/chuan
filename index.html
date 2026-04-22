@@ -9,12 +9,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0; /* 加上这个，网页没有白边 */
         }
            #login {
             width: 320px;
             height: 220px;
             border-radius: 10px; /* 你要求的圆角 */
-            background-color: rgba(255, 255, 255, 0.6); 
                  background-image: url("imags/image2.jpg");
                 background-size: cover;
                 background-position: center;
@@ -34,8 +34,8 @@
                     display: flex;
                     flex-direction: column;
                     padding: 20px;
-                    align-items: flex-end;
-                    gap: 12px;
+                     align-items: center; /* 按钮居中（不挤右上角） */
+                    gap: 24px;
                     display:none;
                     
                }
