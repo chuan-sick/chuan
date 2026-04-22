@@ -13,6 +13,41 @@
             background-attachment: fixed;
           /*  background-color: rgba(255, 255, 255, 0.85);
             background-blend-mode: lighten;    */
+      /* 让登录框居中必备 */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+           #login {
+            width: 320px;
+            height: 220px;
+            background-color: #ffffff;
+            border-radius: 10px; /* 你要求的圆角 */
+            padding: 20px;
+            /* 内部内容靠右上 */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 12px; /* 两个输入框间距 */
+        }
+               #main{
+                    width:640px;
+                    height:1280px;
+                    background-color: pink;
+                    border-radius: 10px;
+                    padding: 20px;
+                    align-items: flex-end;
+                    gap: 12px;
+               }
+               /* 输入框统一样式 */
+        input {
+            width: 220px;
+            height: 35px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -27,6 +62,10 @@
    <button style="background:pink; padding:10px 20px; font-size:18px;"
         onclick="window.location.href='https://www.bilibili.com/video/BV1UT42167xb/'">
 站长推荐
+</button>
+            <button style="background:pink; padding:10px 20px; font-size:18px;"
+        onclick="window.location.href='https://www.bilibili.com/video/BV1UT42167xb/'">
+好康的
 </button>
        </div>
 <script>
