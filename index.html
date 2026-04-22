@@ -4,14 +4,6 @@
      <!-- <meta http-equiv="refresh" content="0;url=https://www.bilibili.com/video/BV1UT42167xb/?spm_id_from=333.337.search-card.all.click"> -->
      <title>传奇站长的启航</title>
           <style>  body {
-          
-            background-repeat: no-repeat;
-            background-position: center; /* 居中 */
-            background-size: 960px;
-            /* 4. 图片固定不动，滚动时不跟着走 */
-            background-attachment: fixed;
-          /*  background-color: rgba(255, 255, 255, 0.85);
-            background-blend-mode: lighten;    */
       /* 让登录框居中必备 */
             height: 100vh;
             display: flex;
@@ -24,6 +16,9 @@
             border-radius: 10px; /* 你要求的圆角 */
             background-color: rgba(255, 255, 255, 0.6); 
                  background-image: url("imags/image2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             padding: 20px;
             /* 内部内容靠右上 */
             display: flex;
@@ -36,10 +31,13 @@
                     width:1280px;
                     height:800px;
                     border-radius: 10px;
-                    display:flex;
+                    display: flex;
+                    flex-direction: column;
                     padding: 20px;
                     align-items: flex-end;
                     gap: 12px;
+                    display:none;
+                    
                }
                /* 输入框统一样式 */
         input {
@@ -58,7 +56,7 @@
           <input type="password" id="pwd" placeholder="请输入密码">
           <button onclick="login()">登录</button>
           </div>
-       <div id="main"style="display:none;" >
+       <div id="main" >
     <!-- <img src="imags/Eryim2sUwAAZnUE.jpg"> -->
    <button style="background:pink; padding:10px 20px; font-size:18px;"
         onclick="window.location.href='https://www.bilibili.com/video/BV1UT42167xb/'">
@@ -75,7 +73,7 @@
           let password =document.getElementById("pwd").value;
           if(user==="114514"&&password==="114514"){
                document.getElementById("login").style.display="none";
-               document.getElementById("main").style.display="block";}
+               document.getElementById("main").style.display="flex";}
           else if(user!=="114514"){
                alert("用户名错误")}
      else{
