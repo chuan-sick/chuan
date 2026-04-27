@@ -12,8 +12,8 @@
             margin: 0; /* 加上这个，网页没有白边 */
         }
            #login {
-            width: 320px;
-            height: 220px;
+            width: 1200px;
+            height: 600px;
             border-radius: 10px; /* 你要求的圆角 */
                  background-image: url("imags/image2.gif");
                 background-size: cover;
@@ -28,6 +28,7 @@
         }
                #main{  
                     background-image: url("imags/image1.jpg");
+                     background-repeat: no-repeat;
                     width:1280px;
                     height:800px;
                     border-radius: 10px;
@@ -48,6 +49,39 @@
             border-radius: 6px;
             box-sizing: border-box;
         }
+               *{
+                    margin:0;
+                    padding:0;
+                    box-sizing: border-box;
+               }
+               /* 导航栏外框 */
+.navbar {
+    width: 100%;
+    background-color: rgba(255, 183, 197, 0.9); /* 粉色半透明 */
+    padding: 18px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* 导航列表横向排列 */
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 50px;
+}
+/* 导航链接文字 */
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 鼠标悬浮变色 */
+.nav-list a:hover {
+    color: #ff3366;
+    transition: 0.2s;
+}
     </style>
 </head>
 <body>
@@ -58,6 +92,15 @@
           </div>
        <div id="main" >
     <!-- <img src="imags/Eryim2sUwAAZnUE.jpg"> -->
+            <!-- 👉 导航栏在这里 👈 -->
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">本子</a></li>
+            <li><a href="#">赤石</a></li>
+            <li><a href="#">设置</a></li>
+        </ul>
+    </div>
    <button style="background:pink; padding:10px 20px; font-size:18px;"
         onclick="window.location.href='https://www.bilibili.com/video/BV1UT42167xb/'">
 站长推荐
