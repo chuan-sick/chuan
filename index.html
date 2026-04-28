@@ -3,7 +3,13 @@
 <head> 
      <!-- <meta http-equiv="refresh" content="0;url=https://www.bilibili.com/video/BV1UT42167xb/?spm_id_from=333.337.search-card.all.click"> -->
      <title>传奇站长的启航</title>
-          <style>  body {
+          <style>    *{
+                    margin:0;
+                    padding:0;
+                    box-sizing: border-box;
+               }
+               body { 
+   
       /* 让登录框居中必备 */
             height: 100vh;
             display: flex;
@@ -28,7 +34,8 @@
         }
                #main{  
                     background-image: url("imags/image1.jpg");
-                     background-size: cover;
+                     background-size: cover; 
+                    background-position: center;
                      background-repeat: no-repeat;
                     width: 100vw;
                     height: 100vh;
@@ -38,6 +45,7 @@
                     padding: 20px;
                      align-items: center; /* 按钮居中（不挤右上角） */
                     gap: 24px;
+                  
                     display:none;
                     
                }
@@ -50,11 +58,7 @@
             border-radius: 6px;
             box-sizing: border-box;
         }
-               *{
-                    margin:0;
-                    padding:0;
-                    box-sizing: border-box;
-               }
+             
                /* 导航栏外框 */
 .navbar {
     width: 100%;
